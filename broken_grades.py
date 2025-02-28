@@ -21,26 +21,27 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: ")) #needs int along with open parenthesis-edited by Svetlana 
 
-exam_3 = str(input("Input exam grade three: "))
+exam_three = int(input("Input exam grade three: "))#change to int as data type as its numerical,instead of str as the data type
+                                               #change 3 to three to keep a same format-edited by svetlana
 
-grades = [exam_one exam_two exam_three]
+grades = [exam_one, exam_two, exam_three]#commas between each element in the list-edited by svetlana
 sum = 0
-for grade in grade:
+for grade in grades:#the grade on the right hand side should be grades it can cause the code to repeat by itself-edited by svetlana
   sum = sum + grade
 
-avg = sum / len(grdes)
+avg = sum / len(grades)#spelling error should be grades instead of grade-edited by svetlana
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90:#colon has been added at the end of the elif statement-edited by Svetlana
     letter_grade = "B"
-elif avg > 69 and avg < 80:
-    letter_grade = "C'
-elif avg <= 69 and avg >= 65:
+elif avg > 70 and avg < 80:#shouldnt be 69, should be 70-edited by svetlana
+    letter_grade = "C" #change single to double quotation mark-edited by svetlana
+elif avg >= 60 and avg <= 69:#sign should be changed from <= to >= and number should be 60 to 69-edited by svetlaan
     letter_grade = "D"
-elif:
+else:#this elif statement should be else-edited by svetlana
     letter_grade = "F"
 
 for grade in grades:
@@ -48,9 +49,9 @@ for grade in grades:
 
     print("Average: " + str(avg))
 
-    print("Grade: " + letter_grade)
+    print("Grade: " + str(letter_grade))#str data type is missing-edited by svetlana
 
-if letter-grade is "F":
-    print "Student is failing."
+if letter_grade == "F":#should be == instead of is, used comparative statement and underscore instead of a hyphen -edited by svetlana
+    print( "Student is failing.") #print statement in bracket-edited by svetlana
 else:
-    print "Student is passing."
+    print ("Student is passing.")#print statement in bracket-edited by svetlana
